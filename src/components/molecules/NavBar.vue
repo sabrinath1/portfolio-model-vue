@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue"
-import { NavItem } from "@/components/atoms"
+import NavItem from "../atoms/NavItem.vue"
 export default defineComponent({ components: { NavItem } })
 </script>
 

@@ -1,7 +1,4 @@
-export { default as Logo } from "./Logo.vue"
-export { default as NavItem } from "./NavItem.vue"
-export { default as NavBar } from "../molecules/NavBar.vue"
-export { default as Search } from "../molecules/SearchForm.vue"
+export { default as HeaderComponent } from "../organisms/HeaderComponent.vue"
 export { default as SocialLink } from "./SocialLink.vue"
 export { default as SocialNetworks } from "../molecules/SocialNetworks.vue"
 export { default as ServiceProvided } from "../molecules/ServicesProvided.vue"

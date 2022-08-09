@@ -1,28 +1,22 @@
 <template>
   <div class="component">
-    <Logo />
-    <NavBar />
-    <SearchForm></SearchForm>
+    <HeaderComponent />
   </div>
+  <SocialNetworks></SocialNetworks>
+  <ServicesProvided></ServicesProvided>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue"
-import { Logo } from "@/components/atoms"
-import NavBar from "@/components/molecules/NavBar.vue"
-import SearchForm from "@/components/molecules/SearchForm.vue"
+import HeaderComponent from "./components/organisms/HeaderComponent.vue"
+import SocialNetworks from "./components/molecules/SocialNetworks.vue"
+import ServicesProvided from "./components/molecules/ServicesProvided.vue"
 
 export default defineComponent({
   components: {
-    NavBar,
-    Logo,
-    SearchForm
+    HeaderComponent,
+    SocialNetworks,
+    ServicesProvided
   }
 })
 </script>
-
-<style lang="scss" scoped>
-.component {
-  width: 300px;
-}
-</style>
