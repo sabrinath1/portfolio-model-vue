@@ -13,7 +13,7 @@ import { NavItem } from "@/components/atoms"
 export default defineComponent({ components: { NavItem } })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .nav-bar {
   width: max-content;
   display: grid;

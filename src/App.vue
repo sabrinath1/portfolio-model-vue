@@ -2,6 +2,7 @@
   <div class="component">
     <Logo />
     <NavBar />
+    <SearchForm></SearchForm>
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import { defineComponent } from "vue"
 import { Logo } from "@/components/atoms"
 import NavBar from "@/components/molecules/NavBar.vue"
+import SearchForm from "@/components/molecules/SearchForm.vue"
 
 export default defineComponent({
   components: {
     NavBar,
-    Logo
+    Logo,
+    SearchForm
   }
 })
 </script>
