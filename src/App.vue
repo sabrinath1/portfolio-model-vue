@@ -1,6 +1,7 @@
 <template>
   <div class="component">
     <HeaderComponent />
+    <PresentationMain />
   </div>
   <SocialNetworks></SocialNetworks>
   <ServicesProvided></ServicesProvided>
@@ -9,14 +10,11 @@
 <script lang="ts">
 import { defineComponent } from "vue"
 import HeaderComponent from "./components/organisms/HeaderComponent.vue"
-import SocialNetworks from "./components/molecules/SocialNetworks.vue"
-import ServicesProvided from "./components/molecules/ServicesProvided.vue"
-
+import PresentationMain from "./components/organisms/PresentationMain.vue"
 export default defineComponent({
   components: {
     HeaderComponent,
-    SocialNetworks,
-    ServicesProvided
+    PresentationMain
   }
 })
 </script>

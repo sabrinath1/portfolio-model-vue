@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue"
-import { SocialLink } from "../atoms"
+import SocialLink from "../atoms/SocialLink.vue"
 
 export default defineComponent({
   components: { SocialLink }
