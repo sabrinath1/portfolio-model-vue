@@ -1,6 +1,12 @@
 <template>
+  <div class="header-mobile">
+    <HeaderMobile />
+  </div>
   <div class="component">
-    <HeaderComponent />
+    <div class="header-desktop">
+      <HeaderComponent />
+    </div>
+
     <PresentationMain />
     <ServiceProvided />
     <SocialNetworks></SocialNetworks>
@@ -13,12 +19,14 @@ import { defineComponent } from "vue"
 import HeaderComponent from "./components/organisms/HeaderComponent.vue"
 import PresentationMain from "./components/organisms/PresentationMain.vue"
 import ServicesProvided from "./components/organisms/ServicesProvided.vue"
+import HeaderMobile from "./components/organisms/HeaderMobile.vue"
 
 export default defineComponent({
   components: {
     HeaderComponent,
     PresentationMain,
-    ServicesProvided
+    ServicesProvided,
+    HeaderMobile
   }
 })
 </script>
@@ -26,6 +34,16 @@ export default defineComponent({
 .component {
   width: 85%;
   max-width: 1150px;
-  margin: 0 auto;
+  margin: 10px auto;
+}
+@media screen and (min-width: 900px) {
+  .header-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 899px) {
+  .header-desktop {
+    display: none;
+  }
 }
 </style>
