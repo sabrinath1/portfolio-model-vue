@@ -31,5 +31,14 @@ export default defineComponent({ components: { SocialNetworks } })
     top: 50%;
     transform: translateY(-50%);
   }
+  @media screen and (max-width: 899px) {
+    .social-networks {
+      display: none;
+    }
+    .presentation {
+      width: 100%;
+      height: 200px;
+    }
+  }
 }
 </style>

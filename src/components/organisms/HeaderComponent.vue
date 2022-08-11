@@ -23,8 +23,5 @@ export default defineComponent({
   grid-template-columns: 160px repeat(2, auto);
   align-items: center;
   justify-content: space-around;
-  margin-right: 30px;
-  margin-left: 5px;
-  margin-top: 20px;
 }
 </style>

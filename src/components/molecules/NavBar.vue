@@ -19,5 +19,6 @@ export default defineComponent({ components: { NavItem } })
   display: grid;
   grid-auto-flow: column;
   grid-gap: 2.5rem;
+  margin-right: 20px;
 }
 </style>

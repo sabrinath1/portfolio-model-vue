@@ -37,4 +37,11 @@ export default defineComponent({
   margin-left: 30px;
   margin-right: 50px;
 }
+@media screen and (max-width: 899px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5rem;
+  }
+}
 </style>

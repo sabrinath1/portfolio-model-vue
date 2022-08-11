@@ -1,6 +1,6 @@
 <template>
   <form class="search-form">
-    <input type="search" placeholder="Buscar" />
+    <input class="input-search" type="search" placeholder="Buscar" />
     <button type="submit">
       <img src="@/assets/images/icons/search.svg" alt="Buscar" />
     </button>
@@ -17,7 +17,7 @@ export default defineComponent({})
 .search-form {
   position: relative;
   width: max-content;
-  input {
+  .input-search {
     border: none;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
